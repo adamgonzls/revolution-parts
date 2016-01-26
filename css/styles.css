@@ -24,6 +24,7 @@ html {
 /****************************************
   Defaults
 *****************************************/
+
 h1,
 h2,
 h3,
@@ -53,15 +54,11 @@ p {
 /****************************************
   Layout
 *****************************************/
+
 .page {
   width: 100%;
   text-align: center;
 }
-
-.panel {
-  /*margin: 0 auto;*/
-}
-
 
 /**
  * Primary Header
@@ -98,6 +95,12 @@ p {
 .controls {
   flex: 1;
   text-align: right;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.controls span {
+  font-weight: 700;
 }
 
 .controls a {
@@ -201,6 +204,18 @@ p {
   letter-spacing: 3px;
 }
 
+.decoration {
+  top: -30px;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #24b7bd;
+  position: relative;
+  z-index: -1;
+}
+
 .tiles {
   display: flex;
   flex-wrap: wrap;
@@ -231,8 +246,12 @@ p {
   width: 100%;
   padding-top: 45px;
   padding-bottom: 80px;
-  background-color: #404040;
-  background-image: url(http://www.revolutionparts.com/wp-content/uploads/2015/10/hero2.jpg);
+  /*background-image: url(http://www.revolutionparts.com/wp-content/uploads/2015/10/hero2.jpg);*/
+  background: linear-gradient(
+    rgba(64, 64, 64, .95),
+    rgba(64, 64, 64, .95)
+    ),
+    url(../images/adam-felicity-ny.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -358,9 +377,9 @@ p {
 /****************************************
   Components
 *****************************************/
+
 .controls .phone {
   font-size: 14px;
-  font-weight: 700;
 }
 
 .phone span {
@@ -379,6 +398,7 @@ p {
   font-size: 12px;
   font-family: "Sanchez";
   border: 1px solid transparent;
+  letter-spacing: 2px;
 }
 
 .btn-action:hover {
