@@ -1,0 +1,195 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+
+/*
+See this explanation for details
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+
+html {
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+
+/****************************************
+  Defaults
+*****************************************/
+h1,
+h2,
+h3 {
+  font-family: 'Sanchez', serif;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+/****************************************
+  Helpers
+*****************************************/
+
+
+/****************************************
+  Layout
+*****************************************/
+.page {
+  width: 100%;
+  text-align: center;
+}
+
+.panel {
+  /*margin: 0 auto;*/
+}
+
+/*header*/
+
+.page header {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  height: 100px;
+}
+
+.info-bar {
+  display: flex;
+  padding: 20px 20px 20px 5px;
+  text-transform: uppercase;
+}
+
+.logo {
+  flex: 1;
+  /*background: pink;*/
+  text-align: left;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding-left: 5px;
+}
+
+.logo span {
+  color: #e41f29;
+}
+
+.controls {
+  flex: 1;
+  /*background: orange;*/
+  text-align: right;
+}
+
+.controls a {
+  display: inline-block;
+  /*padding: 5px;*/
+  /*margin: 10px;*/
+}
+
+/*component*/
+.controls .phone {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main-nav ul {
+  display: flex;
+  padding: 20px 100px;
+  background: #000;
+}
+
+.main-nav li {
+  flex: 1;
+  list-style-type: none;
+}
+
+.main-nav a {
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: #e41f29;
+}
+
+.intro {
+  margin-top: 200px;
+  background: green;
+}
+
+.intro h1 {
+  font-family: "Oswald", serif;
+  font-size: 43px;
+  letter-spacing: 1px;
+}
+
+.characteristics h1 {
+  font-size: 43px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #24b7bd;
+  padding: 50px 0;
+  letter-spacing: 3px;
+}
+
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.tile {
+  width: calc(33.33% - 30px);
+  margin: 10px;
+}
+
+.tile i,
+.tile h2 {
+  color: #24b7bd;
+}
+
+.tile i {
+  margin: 5px;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+
+
+/****************************************
+  Components
+*****************************************/
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.btn-action {
+  color: #fff;
+  background: #e41f29;
+  font-size: 12px;
+  font-family: "Sanchez";
+  border: 1px solid transparent;
+}
+
+.btn-action:hover {
+  color: #e41f29;
+  background: #fff;
+  border: 1px solid #e41f29;
+}
