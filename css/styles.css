@@ -26,9 +26,14 @@ html {
 *****************************************/
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Sanchez', serif;
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 45px;
 }
 
 p {
@@ -79,7 +84,6 @@ p {
 
 .logo {
   flex: 1;
-  /*background: pink;*/
   text-align: left;
   font-weight: 600;
   font-size: 25px;
@@ -93,20 +97,11 @@ p {
 
 .controls {
   flex: 1;
-  /*background: orange;*/
   text-align: right;
 }
 
 .controls a {
   display: inline-block;
-  /*padding: 5px;*/
-  /*margin: 10px;*/
-}
-
-/*component*/
-.controls .phone {
-  font-size: 14px;
-  font-weight: 700;
 }
 
 .main-nav ul {
@@ -130,24 +125,25 @@ p {
   color: #e41f29;
 }
 
-/*join content*/
+/**
+ * Intro
+ */
 
 .intro {
   margin-top: 200px;
-  background: green;
+  margin-bottom: 50px;
 }
 
 .intro h1 {
   font-family: "Oswald", serif;
-  font-size: 43px;
   letter-spacing: 1px;
 }
 
 .img-collage {
   display: flex;
   width: 90%;
-  height: 300px;
-  margin: 0 auto;
+  height: 320px;
+  margin: 60px auto 40px auto;
 }
 
 .img-lg {
@@ -161,17 +157,17 @@ p {
 
 .img-cluster {
   flex: 1;
-  background: red;
   height: 100%;
 }
 
 .img-row1 {
   height: 50%;
-  /*background: blue;*/
   background-image: url(../images/styles-conf.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  margin: 0 0 5px 5px;
+  border: 1px solid #bbb;
 }
 
 .img-row2 {
@@ -185,14 +181,19 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  margin: 0 0 5px 5px;
 }
 
+.intro > p {
+  width: 60%;
+  margin: 0 auto;
+}
 
-
-/*characteristics*/
+/**
+ * Characteristics
+ */
 
 .characteristics h1 {
-  font-size: 43px;
   text-transform: uppercase;
   color: #fff;
   background: #24b7bd;
@@ -222,14 +223,150 @@ p {
   vertical-align: middle;
 }
 
+/**
+ * Perks
+ */
 
+.perks .container {
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 80px;
+  background-color: #404040;
+  background-image: url(http://www.revolutionparts.com/wp-content/uploads/2015/10/hero2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
+.perks h1 {
+  color: #fff;
+}
 
+/**
+ * Perks
+ */
 
+.closing {
+  padding-bottom: 100px;
+}
+
+.closing h1 {
+  padding-top: 45px;
+}
+
+.closing h3 {
+  padding-top: 20px;
+}
+
+.closing > p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/**
+ * Contact
+ */
+
+.contact {
+  padding-top: 80px;
+  color: #fff;
+  background: #1a1a1a;
+}
+
+.contact h1 {
+  margin-bottom: 0;
+}
+
+.contact h4 {
+  margin-top: 0;
+  font-family: "Open Sans";
+  letter-spacing: 2px;
+}
+
+.columns {
+  display: flex;
+}
+
+.columns h3 {
+  font-family: "Open Sans";
+  font-size: 22px;
+  text-transform: none;
+}
+
+.column {
+  flex: 1;
+}
+
+.social ul {
+  text-align: center;
+  margin: 0;
+}
+
+.social li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 50px 10px;
+}
+
+.social li:hover {
+  color: #000;
+}
+
+.social a {
+  display: inline-block;
+  font-size: 30px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  position: relative;
+}
+
+.social a:before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  z-index: 1;
+  background-color: #e41f29;
+  width: 52px;
+  height: 52px;
+  transform: rotate(45deg);
+}
+
+.social a:hover:before {
+  background-color: #fff;
+}
+
+.social i {
+  position: relative;
+  z-index: 999;
+}
+
+/**
+ * Footer
+ */
+
+.page footer {
+  font-family: "Sanchez";
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+}
 
 /****************************************
   Components
 *****************************************/
+.controls .phone {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.phone span {
+  color: #444747;
+}
+
 .btn {
   padding: 10px 20px;
   border-radius: 20px;
@@ -249,3 +386,5 @@ p {
   background: #fff;
   border: 1px solid #e41f29;
 }
+
+
