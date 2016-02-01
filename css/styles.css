@@ -34,11 +34,11 @@ h4 {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 3em;
 }
 
 p {
-  line-height: 28px;
+  line-height: 1.8em;
   font-size: 1em;
 }
 
@@ -56,7 +56,7 @@ p {
 *****************************************/
 
 .page {
-  width: 100%;
+  /*width: 100%;*/
   text-align: center;
 }
 
@@ -70,7 +70,8 @@ p {
   top: 0;
   width: 100%;
   padding: 0;
-  height: 100px;
+  z-index: 999;
+  /*height: 100px;*/
 }
 
 .info-bar {
@@ -83,7 +84,7 @@ p {
   flex: 1;
   text-align: left;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.5em;
   letter-spacing: 2px;
   padding-left: 5px;
 }
@@ -109,7 +110,8 @@ p {
 
 .main-nav ul {
   display: flex;
-  padding: 20px 100px;
+  padding: 1.25em 7em;
+  margin: 0;
   background: #000;
 }
 
@@ -120,7 +122,7 @@ p {
 
 .main-nav a {
   color: #fff;
-  padding: 20px;
+  padding: 1.25em;
   text-decoration: none;
 }
 
@@ -133,8 +135,8 @@ p {
  */
 
 .intro {
-  margin-top: 200px;
-  margin-bottom: 50px;
+  margin-top: 13em;
+  margin-bottom: 3.5em;
 }
 
 .intro h1 {
@@ -146,7 +148,7 @@ p {
   display: flex;
   width: 90%;
   height: 320px;
-  margin: 60px auto 40px auto;
+  margin: 4.4em auto 0 auto;
 }
 
 .img-lg {
@@ -180,11 +182,14 @@ p {
 
 .img-row2 > div {
   flex: 1;
-  background: pink;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0 0 5px 5px;
+}
+
+.intro h3 {
+  font-size: 1.2em;
 }
 
 .intro > p {
@@ -197,15 +202,14 @@ p {
  */
 
 .characteristics h1 {
-  text-transform: uppercase;
   color: #fff;
   background: #24b7bd;
-  padding: 50px 0;
+  padding: 1em 0;
   letter-spacing: 3px;
 }
 
 .decoration {
-  top: -30px;
+  top: -32px;
   width: 0;
   height: 0;
   margin: 0 auto;
@@ -219,7 +223,7 @@ p {
 .tiles {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 1.25em;
 }
 
 .tile {
@@ -229,12 +233,13 @@ p {
 
 .tile i,
 .tile h2 {
+  font-size: 1.2em;
   color: #24b7bd;
 }
 
 .tile i {
-  margin: 5px;
-  font-size: 40px;
+  margin: .25em;
+  font-size: 2.5em;
   vertical-align: middle;
 }
 
@@ -246,7 +251,6 @@ p {
   width: 100%;
   padding-top: 45px;
   padding-bottom: 80px;
-  /*background-image: url(http://www.revolutionparts.com/wp-content/uploads/2015/10/hero2.jpg);*/
   background: linear-gradient(
     rgba(64, 64, 64, .95),
     rgba(64, 64, 64, .95)
@@ -257,12 +261,16 @@ p {
   background-position: center center;
 }
 
+.perks img {
+  width: 100%;
+}
+
 .perks h1 {
   color: #fff;
 }
 
 /**
- * Perks
+ * Closing
  */
 
 .closing {
@@ -281,7 +289,7 @@ p {
   width: 80%;
   margin: 0 auto;
   font-size: .9em;
-  line-height: 22px;
+  line-height: 1.5em;
 }
 
 /**
@@ -326,7 +334,7 @@ p {
 .social li {
   display: inline-block;
   list-style-type: none;
-  margin: 50px 10px;
+  margin: 3em .5em;
 }
 
 .social li:hover {
@@ -361,7 +369,7 @@ p {
 
 .social i {
   position: relative;
-  z-index: 999;
+  z-index: 998;
 }
 
 /**
@@ -409,17 +417,10 @@ p {
 
 
 /************************
-media query start  480px*
+media query start  768px*
 ************************/
 
 @media only screen and (max-width: 768px) {
-  body {
-    /*background: red;*/
-  }
-  
-  .page header {
-    /*height: 4em;*/
-  }
   
   .logo {
     font-size: 1em;
@@ -459,21 +460,53 @@ media query start  480px*
     display: none;
   }
 
+  .closing h1 {
+    font-size: 2em;
+    /*max-width: 100%;*/
+  }
+
   .contact {
     padding-top: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
   .contact h1 {
+    font-size: 2em;
     margin-top: 0;
+  }
+  
+  .columns {
+    display: block;
+  }
+
+  .column:nth
+
+
+
+  .social li {
+    /*display: block;*/
   }
 
 }
 
-/*******************
-media query end    *
-*******************/
+/************************
+media query start  480px*
+************************/
 
-@media only screen and (max-width: 768px) {
-  body {
-    /*background: green;*/
+@media only screen and (max-width: 480px) {
+  .closing h1 {
+    font-size: 1.5em;
   }
+
+  .contact h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+
+  .column a {
+    font-size: .8em;
+    width: 100%;
+  }
+
+}
