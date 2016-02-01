@@ -39,7 +39,7 @@ h1 {
 
 p {
   line-height: 28px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .page a {
@@ -75,7 +75,7 @@ p {
 
 .info-bar {
   display: flex;
-  padding: 20px 20px 20px 5px;
+  padding: 1.25em 1.25em 1.25em .25em;
   text-transform: uppercase;
 }
 
@@ -280,7 +280,7 @@ p {
 .closing > p {
   width: 80%;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: .9em;
   line-height: 22px;
 }
 
@@ -408,3 +408,53 @@ p {
 }
 
 
+/************************
+media query start  480px*
+************************/
+
+@media only screen and (max-width: 480px) {
+  body {
+    background: red;
+    /*height: ;*/
+  }
+  
+  .page header {
+    /*height: 4em;*/
+  }
+  
+  .logo {
+    font-size: 1em;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    text-align: center;
+  }
+
+  .info-bar {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .controls {
+    display: none;
+  }
+  
+  .main-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav li {
+    padding: 20px;
+  }
+
+
+  .perks {
+    display: none;
+  }
+
+}
+
+/*******************
+media query end    *
+*******************/
