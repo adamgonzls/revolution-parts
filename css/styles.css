@@ -412,7 +412,7 @@ p {
 media query start  480px*
 ************************/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   body {
     background: red;
     /*height: ;*/
@@ -448,9 +448,24 @@ media query start  480px*
     padding: 20px;
   }
 
+  .tiles {
+    /*display: static;*/
+  }
+  
+  .tile {
+    width: 100%;
+  }
 
   .perks {
     display: none;
+  }
+
+  .contact {
+    padding-top: 20px;
+  }
+
+  .contact h1 {
+    margin-top: 0;
   }
 
 }
@@ -458,3 +473,8 @@ media query start  480px*
 /*******************
 media query end    *
 *******************/
+
+@media only screen and (max-width: 768px) {
+  body {
+    /*background: green;*/
+  }
