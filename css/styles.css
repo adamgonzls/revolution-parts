@@ -56,7 +56,6 @@ p {
 *****************************************/
 
 .page {
-  /*width: 100%;*/
   text-align: center;
 }
 
@@ -71,7 +70,6 @@ p {
   width: 100%;
   padding: 0;
   z-index: 999;
-  /*height: 100px;*/
 }
 
 .info-bar {
@@ -329,6 +327,7 @@ p {
 .social ul {
   text-align: center;
   margin: 0;
+  padding: 0;
 }
 
 .social li {
@@ -434,7 +433,6 @@ media query start  768px*
     margin: 0;
   }
 
-
   .controls {
     display: none;
   }
@@ -447,10 +445,6 @@ media query start  768px*
   .main-nav li {
     padding: 20px;
   }
-
-  .tiles {
-    /*display: static;*/
-  }
   
   .tile {
     width: 100%;
@@ -462,7 +456,6 @@ media query start  768px*
 
   .closing h1 {
     font-size: 2em;
-    /*max-width: 100%;*/
   }
 
   .contact {
@@ -475,17 +468,35 @@ media query start  768px*
     font-size: 2em;
     margin-top: 0;
   }
+
+  .contact h3 {
+    margin-bottom: 0;
+  }
   
   .columns {
     display: block;
+    text-align: center;
+    margin: 0 10px;
   }
 
-  .column:nth
+  .column {
+    display: block;
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+  }
 
+  .social a {
+    width: 48px;
+    height: 48px;
+    line-height: 52px;
+  }
 
-
-  .social li {
-    /*display: block;*/
+  .social a:before {
+    top: 5px;
+    left: 5px;
+    width: 39px;
+    height: 39px;
   }
 
 }
@@ -498,6 +509,12 @@ media query start  480px*
   .closing h1 {
     font-size: 1.5em;
   }
+  
+  .contact {
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+
 
   .contact h1 {
     font-size: 1.5em;
@@ -505,6 +522,11 @@ media query start  480px*
   }
 
   .column a {
+    font-size: .8em;
+    width: 100%;
+  }
+  
+  .column address {
     font-size: .8em;
     width: 100%;
   }
